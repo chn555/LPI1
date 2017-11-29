@@ -1,0 +1,26 @@
+when declaring VAR, its scope it the range in which it applies, unless it is declared global
+declare  myuser=chn
+echo it  $myuser
+it will run. open another terminal and echo it, it will not run.
+
+# source
+
+source loads VAR to current location, use as
+# source script.sh
+will load all variables in the script for using in current location.
+
+# export
+
+exports VAR to system-wide.
+makes VAR global
+# export VAR
+
+when creating bash scripts, use printf instead of echo
+use set -x at beginning of script to output every coomand used
+OR when running script use bash -x. does the same thing
+set -e stop the script at the first error
+
+for multi-line comments start with << EOF | EOF
+OR : '  |  '
+
+
